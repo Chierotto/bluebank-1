@@ -1,0 +1,5 @@
+127.0.0.1 - - [10/Dec/2016:10:58:40 -0200] "GET / HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [10/Dec/2016:10:58:53 -0200] "GET /bluebank/transferencia?agOrigem=1&contaOrigem=1&agDestino=2&contaDestino=2&valor=100 HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [10/Dec/2016:10:58:59 -0200] "GET /bluebank/transferencia?agOrigem=1&contaOrigem=1&agDestino=2&contaDestino=2&valor=100 HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [10/Dec/2016:10:59:03 -0200] "GET /bluebank/ HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [10/Dec/2016:10:59:11 -0200] "GET /bluebank/ HTTP/1.1" 404 -

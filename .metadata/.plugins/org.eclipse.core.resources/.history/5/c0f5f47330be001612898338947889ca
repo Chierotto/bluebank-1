@@ -1,0 +1,5 @@
+package bluebank.jdbc.dao;
+
+public class ContaDao {
+
+}

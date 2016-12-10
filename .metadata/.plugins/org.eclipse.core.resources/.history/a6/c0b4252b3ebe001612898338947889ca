@@ -1,0 +1,37 @@
+package bluebank.jdbc.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import bluebank.jdbc.ConnectionFactory;
+import bluebank.jdbc.modelo.Conta;
+
+public class ContaDao {
+	
+	private Connection connection;
+	   
+	public ContaDao() {
+	  this.connection = new ConnectionFactory().getConnection();
+	}	
+
+	public int ExisteConta(Conta conta){
+		try{
+			PreparedStatement stmt = this.connection.
+	                 prepareStatement("select count(1) existe from conta where agencia = ? and conta = ?");
+			ResultSet rs = stmt.executeQuery();
+			
+			return rs.getInt("existe"); 
+			
+			
+			
+		}catch (Exception e) {
+			throw new RuntimeException(e);
+		}	
+		
+	}
+	
+	
+	
+	
+}

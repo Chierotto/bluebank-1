@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tranferencia</title>
+</head>
+<body>
+
+    <h1>Transferencia</h1>
+    <hr />
+    <form action="transferencia">
+      Agencia Origem: <input type="text" name="agOrigem" /><br />
+      Conta Origem: <input type="text" name="contaOrigem" /><br />
+      Agencia Destino: <input type="text" name="agDestino" /><br />
+      Conta Destino: <input type="text" name="contaDestino" /><br />
+      Valor: <input type="text" name="valor" /><br />
+      <input type="submit" value="Gravar" />
+
+</body>
+</html>

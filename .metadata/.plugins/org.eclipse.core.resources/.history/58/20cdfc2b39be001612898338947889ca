@@ -1,0 +1,54 @@
+package bluebank.jdbc.modelo;
+
+import bluebank.jdbc.dao.ContaDao;
+
+public class Conta {
+
+	private int agencia;
+	private int conta;
+	private double saldo;
+	
+  public int getAgencia() {
+	return agencia;
+  }
+  public int getConta() {
+		return conta;
+  }
+  public double getSaldo() {
+	return saldo;
+  }
+  public void setAgencia(int agencia) {
+	this.agencia = agencia;
+  }
+  public void setConta(int conta) {
+	this.conta = conta;
+  }
+  public void setSaldo(double saldo) {
+	this.saldo = saldo;
+  }
+
+  public void transfere(Conta contaorigem, Conta contadestino, double valor){
+	  
+	// verificar existencia da conta  
+	  
+	  ContaDao dao = new ContaDao();
+	  
+	  if (!dao.ExisteConta(contaorigem)) {
+		  //Conta Invalida
+	  }
+	  
+	  if (!dao.ExisteConta(contadestino)) {
+		  //Conta Invalida
+	  } 
+	  
+	  
+	  if (contaorigem.saldo < valor) {
+		  // valor invalido
+	  }
+  
+	  
+	  
+      
+  }
+
+}
